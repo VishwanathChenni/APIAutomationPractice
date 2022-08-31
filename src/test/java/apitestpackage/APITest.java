@@ -32,6 +32,8 @@ public class APITest {
         System.out.println("ID is "+response.getData().getId());
         System.out.println("URL is "+response.getSupport().getUrl());
         Assert.assertEquals(response.getSupport().getUrl(),"https://reqres.in/#support-heading");
+        System.out.println("Testing Git Branches:-"+response.getSupport().getText());
+
     }
     @Test
     public void createUser(){
